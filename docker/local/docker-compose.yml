@@ -3,7 +3,8 @@ version: '3.9'
 services:
   ## RUN ROOTCHAIN
   rootchain:
-    image: ghcr.io/0xpolygon/go-ethereum-console:latest
+    platform: linux/arm64
+    image: local/go-ethereum-console:arm64
     container_name: polygon-edge-rootchain
     command: [
       "--dev",
